@@ -6,7 +6,8 @@ from django.http import HttpResponse
 #home page
 
 def index(request):
-    return HttpResponse("Home page loaded ok")
+    context_dict = {'boldmessage': 'This also ran ok!'}
+    return render(request, 'floppa/index.html', context=context_dict)
 
 
 
