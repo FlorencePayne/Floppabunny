@@ -29,4 +29,5 @@ urlpatterns = [
     path('floppa/', include('floppa.urls')),
     path('admin/', admin.site.urls),
     path('register/', views.register, name='register'),
+    path('signin/', views.signin, name='signin'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

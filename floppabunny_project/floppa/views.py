@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import redirect
+from django.urls import reverse
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from floppa.forms import UserForm, UserProfileForm
 
 
-# register user
+# user authentication branch
 def register(request):
     registered = False
     
@@ -33,6 +37,26 @@ def register(request):
     return render(request, 'floppa/register.html', context = {'user_form': user_form,
                                                             'profile_form': profile_form,
                                                                 'registered': registered})
+
+    
+def signin(request):
+    
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password)
+
+        if user:
+            if user.is_active:
+                login(request, user)
+                return redirect(reverse('floppa:index'))
+            else:
+                return HttpResponse("Your Floppabunny account is disabled.")
+        else:
+            print(f"Incorrect login details: {username}, {password}")
+            return HttpResponse("Invalid login details supplied.")
+    else:
+        return render(request, 'floppa/signin.html')
 
 #home page
 

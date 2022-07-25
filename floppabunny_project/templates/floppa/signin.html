@@ -1,0 +1,23 @@
+{% extends 'floppa/base.html' %}
+{% load static %}
+
+{% block title_block %}
+    ₍ᐢ ̥ ̞ ̥ᐢ₎ ♥ sign in
+{% endblock %}
+
+{% block body_block %}
+<h1>log in 2 floppabunny</h1>
+<!--creating form to log in-->
+<form id="login_form" method="post" action="{% url 'floppa:signin' %}">
+	{% csrf_token %}
+	username: <input type="text" name="username" value="" size="50" />
+	<br />
+	<!--user enters password-->
+	password: <input type="password" name="password" value="" size="50" />
+	<br />
+	<br>
+	</br>
+	<!--submit button allows user to log in-->
+	<input class= "classic-btn" type="submit" value="submit" />
+</form>
+{% endblock %}
