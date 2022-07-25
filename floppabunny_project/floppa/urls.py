@@ -8,5 +8,6 @@ urlpatterns = [
     path('about/commissions/', views.commissions, name='commissions'),
     path('gallery', views.gallery, name='gallery'),
     path('more_floppa/', views.more_floppa, name='more_floppa'),
+    path('register/', views.register, name='register'),
 
 ]
