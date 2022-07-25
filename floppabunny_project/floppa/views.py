@@ -58,6 +58,13 @@ def signin(request):
     else:
         return render(request, 'floppa/signin.html')
 
+
+#can only logout if you're logged in
+@login_required
+def signout(request):
+    logout(request)
+    return redirect(reverse('floppa:index'))
+
 #home page
 
 def index(request):

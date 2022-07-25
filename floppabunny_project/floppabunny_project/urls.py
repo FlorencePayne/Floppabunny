@@ -30,4 +30,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', views.register, name='register'),
     path('signin/', views.signin, name='signin'),
+    path('signout/', views.signout, name='signout'),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
