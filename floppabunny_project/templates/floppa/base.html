@@ -11,7 +11,14 @@
         <link rel="stylesheet", type="text/css", href="{% static 'base.css' %}"/> <!--calling stylesheet-->
     </head>
     <body>
+        <div>
+            <img class = "base-logo" id = "base-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
+        </div>
+        
         {% block body_block %}
+
         {% endblock %}
+
+        <img class = "base-footer" id = "footer-scaling" src="{% static 'images/footer.png' %}" alt = "logo"/>
     </body>
 </html>
