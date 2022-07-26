@@ -6,6 +6,59 @@ body{
 	width: 95vw;
 }
 
+/* NAV BAR */
+
+ /* NAV BAR ELEMENTS SIZING */
+ #index-nav-scaling{
+    width : 3vmax;
+    height : 3vmax;
+}
+
+/* NAV BAR ELEMENTS POSITIONING */
+
+.index-left-nav{
+    display : block;
+    float : left;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : 0vmax;
+}
+
+
+.right-nav{
+    display : block;
+    float : right;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : -11vmax;
+}
+
+.index-about{
+    display : inline-block;
+    margin-left: 2vmax;
+    margin-top: 3vmax;
+    
+}
+
+.index-signin{
+    display : inline;
+    margin-left : 2vmax;
+}
+
+.index-commissions{
+    display : inline;
+    margin-left : 2vmax;
+    
+}
+
+.index-gallery{
+    display : inline-block;
+    margin-right: 2vmax;
+    margin-top: 3vmax;
+}
+
+
+
 /* LOGO  */
 #index-scaling {
     /*width : 1000px;*/

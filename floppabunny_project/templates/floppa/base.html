@@ -11,10 +11,44 @@
         <link rel="stylesheet", type="text/css", href="{% static 'base.css' %}"/> <!--calling stylesheet-->
     </head>
     <body>
-        <div>
-            <img class = "base-logo" id = "base-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
+        <div class = "top-nav"> <!-- top navigation bar code below -->
+
+            
+            <div class = "left-nav">
+                <!-- about button -->
+                <a href="{% url 'floppa:about' %}">
+                    <img class = "base-about" id = "nav-scaling" src="{% static 'images/paw.png' %}" alt = "about"/>
+                <a/>
+
+                <!-- signin button -->
+                <a href="{% url 'floppa:signin' %}">
+                    <img class = "base-signin" id = "nav-scaling" src="{% static 'images/signin.png' %}" alt = "sign in"/>
+                <a/>
+            </div>  
+
+            <div class = "centre-nav">
+                <!-- home link logo image -->
+                <a href="{% url 'floppa:index' %}">
+                    <img class = "base-logo" id = "base-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
+                <a/>
+            </div>  
+
+            <div class = "right-nav">
+                <!-- gallery button -->
+                <a href="{% url 'floppa:gallery' %}">
+                    <img class = "base-gallery" id = "nav-scaling" src="{% static 'images/photos.png' %}" alt = "gallery"/>
+                <a/>
+
+                <!-- commission button -->
+                <a href="{% url 'floppa:commissions' %}">
+                    <img class = "base-commissions" id = "nav-scaling" src="{% static 'images/shop.png' %}" alt = "commissions"/>
+                <a/>
+            </div>
+
+            
+
         </div>
-        
+
         {% block body_block %}
 
         {% endblock %}

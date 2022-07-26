@@ -6,31 +6,95 @@ body{
 	width: 95vw;
 }
 
-/* LOGO  */
-#base-scaling {
-    /*width : 1000px;*/
-    width : 20vw;
-}
+/* --------------------------------------------------------------------------- */
+/*  NAV BAR */
 
-.base-logo {
-    justify-content : center;
-    display : block;
-    margin-left : auto;
-    margin-right : auto;
+    /* LOGO  */
+    #base-scaling {
+        width : 21vmax;
+    }
 
-}
+    .base-logo {
+        justify-content : center;
+        display : block;
+        margin-left : auto;
+        margin-right : auto;
+        margin-top: -6vmax;
+    }
+
+    /* NAV BAR ELEMENTS SIZING */
+    #nav-scaling{
+        width: 3vmax;
+        height : 3vmax;
+    }
+
+    /* NAV BAR ELEMENTS POSITIONING */
+
+    .left-nav{
+        display : block;
+        float : left;
+        margin-left : auto;
+        margin-right : auto;
+        margin-top : 0vmax;
+    }
+
+    .centre-nav{
+        display : block;
+        float : center;
+        margin-left : 5vmax;
+        margin-right : 5vmax;
+        margin-top : 6vmax;
+    }
+
+    .right-nav{
+        display : block;
+        float : right;
+        margin-left : auto;
+        margin-right : auto;
+        margin-top : -11vmax;
+    }
+
+    .base-about{
+        display : inline-block;
+        margin-left: 2vmax;
+        margin-top: 3vmax;
+        
+    }
+
+    .base-signin{
+        display : inline;
+        margin-left : 2vmax;
+    }
+
+    .base-commissions{
+        display : inline;
+        margin-left : 2vmax;
+        
+    }
+
+    .base-gallery{
+        display : inline-block;
+        margin-right: 2vmax;
+        margin-top: 3vmax;
+    }
 
 
+
+/* --------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------- */
 /* FOOTER  */
 #footer-scaling {
     width : 100%;
-    height: 18vh;
+    height: 13vmax;
 }
 
 .base-footer {
     justify-content : center;
-    display : block;
+    display : block;     
     position : fixed;
     bottom : 0px;
 
 }
+/* --------------------------------------------------------------------------- */
