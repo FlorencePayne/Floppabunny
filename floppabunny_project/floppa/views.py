@@ -76,7 +76,8 @@ def index(request):
 # about page branch
 
 def about(request):
-    return HttpResponse("About page loaded ok")
+    context_dict = {'boldmessage': 'about'}
+    return render(request, 'floppa/about.html', context=context_dict)
 
 def commissions(request):
     return HttpResponse("Commissions page loaded ok")
