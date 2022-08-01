@@ -80,13 +80,13 @@ def about(request):
     return render(request, 'floppa/about.html', context=context_dict)
 
 def commissions(request):
-    return HttpResponse("Commissions page loaded ok")
+    return render(request, 'floppa/commissions.html')
 
 
 
 # gallery branch
 def gallery(request):
-    return HttpResponse("Gallery page loaded ok")
+    return render(request, 'floppa/gallery.html')
     
 
 
