@@ -14,23 +14,31 @@
                 <!-- about button -->
                 <a href="{% url 'floppa:about' %}">
                     <img class = "index-about" id = "index-nav-scaling" src="{% static 'images/paw.png' %}" alt = "about" />
-                <a/>
+                </a>
 
-                <!-- signin button -->
-                <a href="{% url 'floppa:signin' %}">
-                    <img class = "base-signin" id = "index-nav-scaling" src="{% static 'images/signin.png' %}" alt = "sign in"/>
-                <a/>
+                <!-- signin/signout button -->
+                {% if user.is_authenticated %}
+				    <!--sign out button if user is logged in, which takes user to signout.html if clicked-->
+					<a href = "{% url 'floppa:signout' %}">
+					    <img class = "index-signin" id = "index-nav-scaling" src = "{% static 'images/signout.png' %}" alt = "sign out" />
+					</a>
+                {% else %}
+                    <a href = "{% url 'floppa:signin' %}">
+                        <img class = "index-signin" id = "index-nav-scaling" src="{% static 'images/signin.png' %}" alt = "sign in" />
+                    </a>
+                {% endif %}
+
             </div>  
 
             <div class = "index-right-nav">
                 <!-- gallery button -->
                 <a href="{% url 'floppa:gallery' %}">
-                    <img class = "index-gallery" id = "index-nav-scaling" src="{% static 'images/photos.png' %}" alt = "gallery"/>
+                    <img class = "index-gallery" id = "index-nav-scaling" src="{% static 'images/photos.png' %}" alt = "gallery" />
                 <a/>
 
-                <!-- commission button -->
-                <a href="{% url 'floppa:commissions' %}">
-                    <img class = "index-commissions" id = "index-nav-scaling" src="{% static 'images/shop.png' %}" alt = "commissions"/>
+                <!-- contact button -->
+                <a href="{% url 'floppa:more_floppa' %}">
+                    <img class = "index-contact" id = "index-nav-scaling" src="{% static 'images/contact.png' %}" alt = "contact" />
                 <a/>
             </div>
 
@@ -39,18 +47,11 @@
         </div>
 
         <div>
-            <img class = "index-logo" id = "index-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
+            <img class = "index-logo" id = "index-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo" />
         </div>
 
-        <div>
-            <a href="/about/">About</a><br />
-            {% if user.is_authenticated %}
-				    <!--sign out button if user is logged in, which takes user to signout.html if clicked-->
-					<a href = "{% url 'floppa:signout' %}">
-					<button class = "index-btn", id ="btnfarright" > sign out</button>
-					</a>
-            {% endif %}
-        </div>
+        <img class = "index-bunny" id = "bunny-scaling" src = "{% static 'images/bunny1.png' %}" alt = "bunny"/>
+
 
 
     </body>

@@ -43,12 +43,12 @@ body{
 
 .index-signin{
     display : inline;
-    margin-left : 4vmax;
+    margin-left : auto;
 }
 
-.index-commissions{
+.index-contact{
     display : inline;
-    margin-left : 2vmax;
+    margin-left : 0vmax;
     
 }
 
@@ -72,4 +72,17 @@ body{
     margin-left : auto;
     margin-right : auto;
 
+}
+
+/* BUNNY */
+#bunny-scaling{
+    width : 15vmax;
+}
+
+.index-bunny{
+    justify-content : center;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    margin-top : -150pt;
 }

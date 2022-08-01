@@ -93,4 +93,4 @@ def gallery(request):
 # socials/contact branch
 
 def more_floppa(request):
-    return HttpResponse("Contact page loaded ok")
+    return render(request, 'floppa/more_floppa.html')
