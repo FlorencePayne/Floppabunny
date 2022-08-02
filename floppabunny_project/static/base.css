@@ -2,9 +2,25 @@ html,
 
 body{
     background-color: #77B1BC; /* background colour of site */
-    height: 95vh;
-	width: 95vw;
+    height: 99%;
+	width: 99%;
 }
+
+
+/* --------------------------------------------------------------------------- */
+/*  PAGE TEXT */
+
+h1{
+    color : #EDFBFF;
+    font-family : 'Press Start 2P';
+}
+
+h2{
+    color : #7A74A7;
+    font-family : 'DotGothic16'
+}
+/* --------------------------------------------------------------------------- */
+
 
 /* --------------------------------------------------------------------------- */
 /*  NAV BAR */
@@ -84,17 +100,58 @@ body{
 
 
 /* --------------------------------------------------------------------------- */
+/* GALLERY */
+
+.gallery-table{
+    float : center;
+    width : 50%;
+    margin-left : 27%;
+    margin-right : 25%;
+}
+
+#gallery-scaling{
+    width : 15vmax;
+    height : 15vmax;
+}
+
+.gallery-table-img{
+    padding : 0.5vmax;
+}
+/* --------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------- */
+/* SIGNIN */
+
+.signin-title{
+    float : center;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+.signin-form-div{
+    float : center;
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+}
+/* --------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------------------------------- */
 /* FOOTER  */
 #footer-scaling {
-    width : 100%;
+    width : 101%;
     height: 13vmax;
 }
 
 .base-footer {
     justify-content : center;
-    display : block;     
+    display : block;
     position : fixed;
-    bottom : 0px;
+    bottom : 1vh;
 
 }
 /* --------------------------------------------------------------------------- */

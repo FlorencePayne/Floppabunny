@@ -6,18 +6,23 @@
 {% endblock %}
 
 {% block body_block %}
-<h1>log in 2 floppabunny</h1>
-<!--creating form to log in-->
-<form id="login_form" method="post" action="{% url 'floppa:signin' %}">
-	{% csrf_token %}
-	username: <input type="text" name="username" value="" size="50" />
-	<br />
-	<!--user enters password-->
-	password: <input type="password" name="password" value="" size="50" />
-	<br />
-	<br>
-	</br>
-	<!--submit button allows user to log in-->
-	<input class= "classic-btn" type="submit" value="submit" />
-</form>
+<div class = "login-title">
+	<h1>log in 2 floppabunny</h1>
+</div>
+
+<div class = "login-form">
+	<!--creating form to log in-->
+	<form id="login_form" method="post" action="{% url 'floppa:signin' %}">
+		{% csrf_token %}
+		<h2> username: </h2> <input type="text" name="username" value="" size="50" />
+		<br />
+		<!--user enters password-->
+		<h2> password: </h2> <input type="password" name="password" value="" size="50" />
+		<br />
+		<br>
+		</br>
+		<!--submit button allows user to log in-->
+		<input class= "classic-btn" type="submit" value="submit" />
+	</form>
+</div>
 {% endblock %}
