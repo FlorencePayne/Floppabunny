@@ -29,11 +29,18 @@ body{
 h1{
     color : #EDFBFF;
     font-family : 'Press Start 2P';
+    font-size : 3vw;
+    text-align : center;
 }
 
-h2{
+h2,h3{
     color : #7A74A7;
     font-family : 'DotGothic16'
+}
+
+h3{
+    font-size : 1.5vw;
+    text-align : center;
 }
 /* --------------------------------------------------------------------------- */
 
@@ -148,13 +155,26 @@ h2{
 
 
 /* --------------------------------------------------------------------------- */
+/* ABOUT */
+.about-text{
+    float : center;
+    display : block;
+    padding-right : 10%;
+    padding-left : 10%;
+    width : 80%;
+}
+/* --------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------- */
 /* SIGNIN */
 
 .signin-title{
     display : block;
-    width : 50%;
-    padding-left : 30%;
-    padding-right : 20%;
+    width : 80%;
+    padding-right : 10%;
+    padding-left : 10%;
+    float : center;
 }
 
 .signin-form-div{
@@ -191,7 +211,8 @@ h2{
 
 
 
-
+/* --------------------------------------------------------------------------- */
+/*  RESPONSIVE STUFF */
 @media screen and (max-width : 1200px){
     .row{
         padding-left : 20vw;
@@ -207,5 +228,12 @@ h2{
         width : 40vw;
         height : auto;
     }
+
+    h1{
+        font-size : 5.5vw;
+    }
+
+
 }
+/* --------------------------------------------------------------------------- */
 
