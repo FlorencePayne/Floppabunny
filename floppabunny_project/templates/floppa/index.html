@@ -5,6 +5,9 @@
     <head>
         <title> ₍ᐢ ̥ ̞ ̥ᐢ₎ ♥ floppabunny </title>
         <link rel="stylesheet", type="text/css", href="{% static 'index.css' %}"/> <!--calling stylesheet-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
     </head>
 
     <body>
@@ -46,12 +49,14 @@
 
         </div>
 
-        <div>
+        <div class = "index-mobile">
             <img class = "index-logo" id = "index-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo" />
+
+            <img class = "index-bunny" id = "bunny-scaling" src = "{% static 'images/bunny1.png' %}" alt = "bunny"/>
+
+            <mobile-text> hai !!!! welcome 2 floppabunny <3 </mobile-text>
+                
         </div>
-
-        <img class = "index-bunny" id = "bunny-scaling" src = "{% static 'images/bunny1.png' %}" alt = "bunny"/>
-
 
 
     </body>

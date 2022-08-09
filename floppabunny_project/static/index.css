@@ -16,6 +16,10 @@ body{
 
 /* NAV BAR ELEMENTS POSITIONING */
 
+.top-nav{
+    padding-bottom : 25vh;
+}
+
 .index-left-nav{
     display : block;
     float : left;
@@ -86,3 +90,46 @@ body{
     margin-right : auto;
     margin-top : -150pt;
 }
+
+
+mobile-text{
+    display : none;
+}
+/* --------------------------------------------------------------------------- */
+/* MOBILE HOMEPAGE SHTUFF */
+@media screen and (max-width : 1200px){
+    
+    .index-logo{
+        display : none;
+    }
+
+    .index-bunny{
+        float : center;
+    }
+
+    .index-mobile{
+
+    }
+
+    #bunny-scaling{
+        display : block;
+        width : 60vw;
+    }
+
+    #index-scaling {
+        width : 15vw;
+    }
+
+    mobile-text{
+        display : block;
+        float : center;
+        color : #EDFBFF;
+        font-family : 'Press Start 2P';
+        text-align : center;
+        font-size : min(2vw, 40px);
+        padding-top : -12vh;
+    }
+
+}
+
+/* --------------------------------------------------------------------------- */

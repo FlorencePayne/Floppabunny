@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% block body_block %}
-<div class = "login-title">
-	<h1>log in 2 floppabunny</h1>
+<div class = "signin-title">
+	<h1>✧ sign in 2 floppabunny ! ✧</h1>
 </div>
 
-<div class = "login-form">
+<div class = "signin-form-div">
 	<!--creating form to log in-->
-	<form id="login_form" method="post" action="{% url 'floppa:signin' %}">
+	<form class="signin-form" method="post" action="{% url 'floppa:signin' %}">
 		{% csrf_token %}
 		<h2> username: </h2> <input type="text" name="username" value="" size="50" />
 		<br />

@@ -19,45 +19,56 @@
     <body>
         <div class = "top-nav"> <!-- top navigation bar code below -->
 
-            
-            <div class = "left-nav">
-                <!-- about button -->
-                <a href="{% url 'floppa:about' %}">
-                    <img class = "base-about" id = "nav-scaling" src="{% static 'images/paw.png' %}" alt = "about"/>
-                <a/>
+            <table class = "nav-table", id = "nav-table-scaling">
+                <tr>
+                    <th>
+                        <div class = "left-nav">
+                            <!-- about button -->
+                            <a href="{% url 'floppa:about' %}">
+                                <img class = "base-about" id = "nav-scaling" src="{% static 'images/paw.png' %}" alt = "about"/>
+                            <a/>
 
-                <!-- signin button -->
-                <a href="{% url 'floppa:signin' %}">
-                    <img class = "base-signin" id = "nav-scaling" src="{% static 'images/signin.png' %}" alt = "sign in"/>
-                <a/>
-            </div>  
+                            <!-- signin button -->
+                            <a href="{% url 'floppa:signin' %}">
+                                <img class = "base-signin" id = "nav-scaling" src="{% static 'images/signin.png' %}" alt = "sign in"/>
+                            <a/>
+                        </div>  
+                    </th>
 
-            <div class = "centre-nav">
-                <!-- home link logo image -->
-                <a href="{% url 'floppa:index' %}">
-                    <img class = "base-logo" id = "base-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
-                <a/>
-            </div>  
+                    <th>
+                        <div class = "centre-nav">
+                            <!-- home link logo image -->
+                            <a href="{% url 'floppa:index' %}">
+                                <img class = "base-logo" id = "base-scaling" src="{% static 'images/3Dlogo1.png' %}" alt = "logo"/>
+                            <a/>
+                        </div> 
+                    </th>
 
-            <div class = "right-nav">
-                <!-- gallery button -->
-                <a href="{% url 'floppa:gallery' %}">
-                    <img class = "base-gallery" id = "nav-scaling" src="{% static 'images/photos.png' %}" alt = "gallery"/>
-                <a/>
+                    <th>
+                        <div class = "right-nav">
+                            <!-- gallery button -->
+                            <a href="{% url 'floppa:gallery' %}">
+                                <img class = "base-gallery" id = "nav-scaling" src="{% static 'images/photos.png' %}" alt = "gallery"/>
+                            <a/>
 
-                <!-- contact button -->
-                <a href="{% url 'floppa:more_floppa' %}">
-                    <img class = "base-contact" id = "nav-scaling" src="{% static 'images/contact.png' %}" alt = "contact"/>
-                <a/>
-            </div>
+                            <!-- contact button -->
+                            <a href="{% url 'floppa:more_floppa' %}">
+                                <img class = "base-contact" id = "nav-scaling" src="{% static 'images/contact.png' %}" alt = "contact"/>
+                            <a/>
+                        </div>
+                    </th>
 
-            
+                </tr>
+
+            </table>
 
         </div>
 
-        {% block body_block %}
+        <div class = "body-block">
+            {% block body_block %}
 
-        {% endblock %}
+            {% endblock %}
+        </div>  
 
         <img class = "base-footer" id = "footer-scaling" src="{% static 'images/footer.png' %}" alt = "logo"/>
     </body>

@@ -3,7 +3,23 @@ html,
 body{
     background-color: #77B1BC; /* background colour of site */
     height: 99%;
-	width: 99%;
+	max-width: 99%;
+    overflow-x : clip;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width : 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background : #7A74A7;
+}
+
+.body-block{
+    display : block;
+    float : center;
 }
 
 
@@ -25,17 +41,18 @@ h2{
 /* --------------------------------------------------------------------------- */
 /*  NAV BAR */
 
+.top-nav{
+    padding-bottom : 4vh;
+}
+
     /* LOGO  */
     #base-scaling {
         width : 21vmax;
     }
 
     .base-logo {
-        justify-content : center;
-        display : block;
-        margin-left : auto;
-        margin-right : auto;
-        margin-top: -6vmax;
+
+        padding-top : 2vh;
     }
 
     /* NAV BAR ELEMENTS SIZING */
@@ -47,52 +64,44 @@ h2{
     /* NAV BAR ELEMENTS POSITIONING */
 
     .left-nav{
-        display : block;
         float : left;
-        margin-left : auto;
-        margin-right : auto;
-        margin-top : 0vmax;
+        padding-top : 0vh;
+        width : 25vw;
     }
 
     .centre-nav{
-        display : block;
         float : center;
-        margin-left : 5vmax;
-        margin-right : 5vmax;
-        margin-top : 6vmax;
+        width : 50vw;
     }
 
     .right-nav{
-        display : block;
         float : right;
-        margin-left : auto;
-        margin-right : auto;
-        margin-top : -11vmax;
+        width : 25vw;
     }
 
     .base-about{
         display : inline-block;
-        margin-left: 2vmax;
-        margin-top: 3vmax;
+        padding-top: 3vmax;
         
     }
 
     .base-signin{
         display : inline;
-        margin-left : 2vmax;
+        padding-left : 2vmax;
     }
 
     .base-contact{
         display : inline;
-        margin-left : 0vmax;
+        padding-left : 0vmax;
         
     }
 
     .base-gallery{
         display : inline-block;
-        margin-right: 2vmax;
-        margin-top: 3vmax;
+        padding-right: 2vmax;
+        padding-top: 3vmax;
     }
+
 
 
 
@@ -103,20 +112,38 @@ h2{
 /* GALLERY */
 
 .gallery-table{
+    display : block;
     float : center;
-    width : 50%;
-    margin-left : 27%;
-    margin-right : 25%;
+    margin-left : 10vw;
+    margin-right : 10vw;
 }
 
 #gallery-scaling{
-    width : 15vmax;
-    height : 15vmax;
+    width : 25vw;
+    height : auto;
 }
 
 .gallery-table-img{
-    padding : 0.5vmax;
+    width : 50vw;
 }
+
+.column{
+    display : inline-block;
+    float : none;
+    padding : 2vmin;
+}
+
+.column>img{
+    width : 80vw;
+    display : block;
+}
+
+.row{
+    display : flex;
+}
+
+
+
 /* --------------------------------------------------------------------------- */
 
 
@@ -124,17 +151,23 @@ h2{
 /* SIGNIN */
 
 .signin-title{
-    float : center;
     display : block;
-    margin-left : auto;
-    margin-right : auto;
+    width : 50%;
+    padding-left : 30%;
+    padding-right : 20%;
 }
 
 .signin-form-div{
     float : center;
     display : block;
-    margin-left : auto;
-    margin-right : auto;
+    padding-left : 30%;
+    padding-right : 30%;
+}
+
+.signin-form{
+    justify-content : center;
+    padding-left : auto;
+    padding-right : auto;
 }
 /* --------------------------------------------------------------------------- */
 
@@ -143,8 +176,8 @@ h2{
 /* --------------------------------------------------------------------------- */
 /* FOOTER  */
 #footer-scaling {
-    width : 101%;
-    height: 13vmax;
+    width : 99%;
+    height: min(15vh, 200px);
 }
 
 .base-footer {
@@ -155,3 +188,24 @@ h2{
 
 }
 /* --------------------------------------------------------------------------- */
+
+
+
+
+@media screen and (max-width : 1200px){
+    .row{
+        padding-left : 20vw;
+        padding-right : 20vw;
+        flex-direction : column;
+    }
+
+    .column{
+        width : 50vw;
+    }
+
+    #gallery-scaling{
+        width : 40vw;
+        height : auto;
+    }
+}
+
