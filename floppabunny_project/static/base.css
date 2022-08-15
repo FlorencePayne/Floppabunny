@@ -163,6 +163,15 @@ h3{
     padding-left : 10%;
     width : 80%;
 }
+
+.about-button{
+    width : 50%;
+    display : block;
+    float : center;
+    padding-left : 28%;
+    padding-right : 28%;
+}
+
 /* --------------------------------------------------------------------------- */
 
 
@@ -189,8 +198,42 @@ h3{
     padding-left : auto;
     padding-right : auto;
 }
+
+
+input[type=text], input[type=password]{
+    padding : 1vmax;
+    border : 0;
+    width : 80%;
+    border-bottom : 0.35vmax solid #7A74A7;
+    font-family : 'Press Start 2P'; 
+    background-color : #77B1BC;
+    color : #EDFBFF;
+}
+
+/*  styling the inputs when clicked */
+input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+}
+
+.classic-btn{
+    background-color : #99b2ad;
+    border : 0.35vmax solid #EDFBFF;
+    color : #EDFBFF;
+    padding : 1vmax;
+    font-family : 'Press Start 2P';
+    cursor : pointer;
+}
+
+
 /* --------------------------------------------------------------------------- */
 
+
+/* --------------------------------------------------------------------------- */
+/* CONTACT */
+#contact-imgs{
+    width : 20vw;
+}
+/* --------------------------------------------------------------------------- */
 
 
 /* --------------------------------------------------------------------------- */
@@ -231,6 +274,19 @@ h3{
 
     h1{
         font-size : 5.5vw;
+    }
+
+    h3{
+        font-size : 4vw;
+    }
+
+    .classic-btn{
+        padding : 1.5vmax;
+        font-size : 2vmax;
+    }
+
+    #contact-imgs{
+        width : 40vw;
     }
 
 
