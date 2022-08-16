@@ -40,7 +40,6 @@ def register(request):
 
     
 def signin(request):
-    
     if request.method == "POST":
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -54,7 +53,8 @@ def signin(request):
                 return HttpResponse("Your Floppabunny account is disabled.")
         else:
             print(f"Incorrect login details: {username}, {password}")
-            return HttpResponse("Invalid login details supplied.")
+            context_dict = {'failed' : True}
+            return render(request, 'floppa/signin.html', context=context_dict)
     else:
         return render(request, 'floppa/signin.html')
 

@@ -6,10 +6,15 @@
 {% endblock %}
 
 {% block body_block %}
+
 <div class = "signin-title">
 	<h1> ⛧ sign in 2 floppabunny ! ⛧ <br>
 		₍՞◌′ᵕ‵◌₎♡</h1>
 </div>
+
+{% if failed %}
+<h3> oops! incorrect details... pls try again!  ʚ♡ɞ</h3>
+{%endif%}
 
 <div class = "signin-form-div">
 	<!--creating form to log in-->
@@ -23,7 +28,11 @@
 		<br>
 		</br>
 		<!--submit button allows user to log in-->
-		<input class= "classic-btn" type="submit" value="submit" />
+		<input id = "signin-btn" class= "classic-btn" type="submit" value="submit" />
+
+	<div class = "register-text"> <h3> new 2 floppabunny ? join us  <a href="{% url 'floppa:register'%}">here</a> </h3> </div>
+
 	</form>
+	
 </div>
 {% endblock %}

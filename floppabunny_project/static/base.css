@@ -22,6 +22,17 @@ body{
     float : center;
 }
 
+a{
+    color : #EDFBFF;
+    text-decoration : none;
+}
+
+a:hover{
+    text-decoration : underline;
+}
+
+
+
 
 /* --------------------------------------------------------------------------- */
 /*  PAGE TEXT */
@@ -179,6 +190,8 @@ h3{
     width : 100vw;
 }
 
+
+
 /* --------------------------------------------------------------------------- */
 
 
@@ -206,6 +219,10 @@ h3{
     padding-right : auto;
 }
 
+#signin-btn{
+    display : inline;
+}
+
 
 input[type=text], input[type=password]{
     padding : 1vmax;
@@ -230,6 +247,10 @@ input[type=text]:focus, input[type=password]:focus{
     padding : 1vmax;
     font-family : 'Press Start 2P';
     cursor : pointer;
+}
+.register-text{
+    display : inline;
+    float : right;
 }
 
 
@@ -284,10 +305,22 @@ input[type=text]:focus, input[type=password]:focus{
         font-size : 5.5vw;
     }
 
+    h2{
+        font-size : 4.5vw;
+    }
+
     h3{
         font-size : 4vw;
     }
 
+    input[type=text], input[type=password]{
+        width : 100%;
+        font-size : 1.5vmax;
+    }
+
+    #signin-btn{
+        margin-top : 2vh;
+    }
     .classic-btn{
         padding : 1.5vmax;
         font-size : 1.8vmax;
