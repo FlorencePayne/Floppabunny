@@ -121,8 +121,9 @@ h3{
 .gallery-table{
     display : block;
     float : center;
-    margin-left : 10vw;
-    margin-right : 10vw;
+    margin-left : 9vw;
+    margin-right : 20vw;
+    width : 80vw;
 }
 
 #gallery-scaling{
@@ -159,17 +160,23 @@ h3{
 .about-text{
     float : center;
     display : block;
-    padding-right : 10%;
-    padding-left : 10%;
+    padding-right : 10vw;
+    padding-left : 10vw;
     width : 80%;
 }
 
-.about-button{
-    width : 50%;
+#abt-btn{
+    float : center;
+    margin-left : 1vw;
+}
+
+.about-button-div{
+    justify-content : center;
     display : block;
     float : center;
-    padding-left : 28%;
-    padding-right : 28%;
+    padding-left : 40vw;
+    padding-right : 40vw;
+    width : 100vw;
 }
 
 /* --------------------------------------------------------------------------- */
@@ -206,6 +213,7 @@ input[type=text], input[type=password]{
     width : 80%;
     border-bottom : 0.35vmax solid #7A74A7;
     font-family : 'Press Start 2P'; 
+    font-size : 1vmax;
     background-color : #77B1BC;
     color : #EDFBFF;
 }
@@ -282,11 +290,26 @@ input[type=text]:focus, input[type=password]:focus{
 
     .classic-btn{
         padding : 1.5vmax;
-        font-size : 2vmax;
+        font-size : 1.8vmax;
     }
 
     #contact-imgs{
         width : 40vw;
+    }
+
+    .about-button-div{
+        padding-right : 25vw;
+        padding-left : 25vw;
+    
+    }
+
+    #abt-btn{
+        width : 50vw;
+    }
+
+    body{
+        padding-bottom : 25vh;
+
     }
 
 
